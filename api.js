@@ -13,7 +13,7 @@ api.use((req, res, next) => {
     "Origin, X-Requested-With, Content-Type, Accept"
   )
   next()
-  app.options("*", (req, res) => {
+  api.options("*", (req, res) => {
     // allowed XHR methods
     res.header("Access-Control-Allow-Methods", "GET, PATCH, PUT, POST, DELETE, OPTIONS")
     res.send()
