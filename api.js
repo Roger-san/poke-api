@@ -5,7 +5,7 @@ const bodyParser = require("body-parser")
 const api = express()
 
 // CONF CORS
-app.use((req, res, next) => {
+api.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*") // authorized headers for preflight requests
   // https://developer.mozilla.org/en-US/docs/Glossary/preflight_request
   res.header(
