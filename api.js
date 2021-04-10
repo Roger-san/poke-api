@@ -250,7 +250,7 @@ api.get("/api/pageoffset/pokemons", (request, response) => {
 })
 
 // GET LOCATIONS
-app.get("/api/pokemons/:pokemonId/locations/:locationId", (req, res) => {
+api.get("/api/pokemons/:pokemonId/locations/:locationId", (req, res) => {
   fs.readFile("db/dbPokemon.json", (error, data) => {
     const allPokemons = JSON.parse(data)
 
